@@ -10,9 +10,10 @@ import java.util.List;
 
 @Service
 public class UserService {
-    private UserDAO userDAO;
 
     @Autowired
+    private UserDAO userDAO;
+
     public void setUserDAO(UserDAO userDAO) {
         this.userDAO = userDAO;
     }
