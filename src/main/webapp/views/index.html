@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="ru" xmlns:th="http://www.thymeleaf.org" xmlns:v-bind="http://www.w3.org/1999/xhtml">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8" />
+    <title>{{message}}</title>
+    <meta content="" name="description" />
+    <meta content="" property="og:image" />
+    <meta content="" property="og:description" />
+    <meta content="" property="og:site_name" />
+    <meta content="website" property="og:type" />
+
+    <meta content="telephone=no" name="format-detection" />
+    <meta http-equiv="x-rim-auto-match" content="none" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="favicon.png" />
+
+    <link rel="stylesheet" href="/libs/bootstrap/bootstrap-grid-3.3.1.min.css" />
+    <link rel="stylesheet" href="/libs/font-awesome-4.2.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/libs/magnific-popup/magnific-popup.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/media.css" />
+</head>
+<body>
+
+<header class="main_header">
+    <!--<?-->
+        <!--session_start();-->
+        <!--if (isset($_SESSION['logged_user']) && ($_SESSION['logged_user']->role == "admin" || $_SESSION['logged_user']->role == "moderator"))-->
+        <!--echo "<a href='/admin' class='admin'></a>";-->
+    <!--?>-->
+    <div class="top_line">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <div class="logo">
+                        <h3><i class="fa fa-book" aria-hidden="true"></i>Book.ru</h3>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <nav class="top_mnu">
+                        <ul>
+                            <li v-for="val in topMenu">
+                                <a v-bind:href="val.link">{{ val.text }}</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="col-md-4">
+                    <!--<a href="<? if (isset($_SESSION['logged_user'])){echo '/user'; } else { echo '#auth';} ?>"-->
+                       <!--class="auth_buttons clearfix <? if (!isset($_SESSION['logged_user'])) echo 'auth_magnific' ?> ">-->
+                        <!--<i class="fa fa-user" aria-hidden="true"></i>-->
+                    <!--</a>-->
+                    <a href="#auth" class="auth_buttons auth_magnific clearfix"><i class="fa fa-user" aria-hidden="true"></i></a>
+                    <div class="hidden">
+                        <div id="auth" class="auth_forms">
+                            <div class="modal-box-content">
+                                <button title="Close (Esc)" type="button" class="mfp-close">×</button>
+                                <form action="/login">
+                                    <h3>Вход</h3>
+                                    <input type="text" name="login" placeholder="Логин или e-mail" required="required" />
+                                    <br />
+                                    <input type="password" name="password" placeholder="Пароль"  required="required" />
+                                    <br />
+                                    <button type="submit" name="do_login" class="button">Войти</button>
+
+                                    <a href="#" class="psd">Забыли пароль?</a>
+                                </form>
+                                <p>
+                                    НЕТ АККАУНТА НА САЙТЕ?<br />
+                                    <a href="/login/registration">Зарегистрироваться</a>
+                                </p>
+                                <hr />
+                                <div class="soc_buttons">
+                                    Через соц. сеть:
+                                    <a href="#">
+                                        <i class="fa fa-vk" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</header>
+
+<!--<section class="main_content" th:replace="${view_content} :: main_content"></section>-->
+<section class="main_content">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9">
+                <div class="content clearfix">
+                    <h2>Книги по бизнесу</h2>
+
+                    <div class="search_book">
+                        <form action="/main/search/" method="get">
+                            <input type="search" name="query" />
+                            <button type="submit">Поиск</button>
+                        </form>
+                    </div>
+
+                    <h2 align="center" th:if="${books.isEmpty()}">Книг не найдено!</h2>
+
+                    <div th:unless="${books.isEmpty()}" th:each="book, stat : ${books}">
+                        <div class="book">
+                            <a th:href="@{/book/id/{value}(value=${book.id})}">
+                                <img th:src="@{/images/book/{pic}(pic=${book.pic})}" alt="alt" />
+                                <div class="book_inf" th:inline="text">
+                                    <p>[[${book.title}]]</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div th:if="${stat.count} % 3 == 0" class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <aside class="sidebar clearfix">
+                <nav class="main_menu">
+                    <ul>
+                        <!--<?-->
+                            <!--if (!isset($idCategory))-->
+                                <!--echo "<li><a href='/main/' class='active'>Все книги</a></li>";-->
+                        <!--else-->
+                        <!--echo "<li><a href='/main/'>Все книги</a></li>";-->
+
+                        <!--foreach ($categories as $category){-->
+                        <!--if ($idCategory == $category['category_id'])-->
+                        <!--echo "<li><a href='/main/category/{$category['URL_category']}' class='active'>" . $category['name'] . "</a></li>";-->
+                        <!--else-->
+                        <!--echo "<li><a href='/main/category/{$category['URL_category']}'>" . $category['name'] . "</a></li>";-->
+
+                        <!--}-->
+                        <!--?>-->
+                    </ul>
+                </nav>
+            </aside>
+        </div>
+    </div>
+</section>
+
+<footer class="top" title="Наверх">
+    <a href="#"></a>
+</footer>
+
+<div class="hidden"></div>
+
+<!--[if lt IE 9]>
+<script src="/libs/html5shiv/es5-shim.min.js"></script>
+<script src="/libs/html5shiv/html5shiv.min.js"></script>
+<script src="/libs/html5shiv/html5shiv-printshiv.min.js"></script>
+<script src="/libs/respond/respond.min.js"></script>
+<![endif]-->
+
+<script src="/libs/jquery/jquery-1.11.1.min.js"></script>
+<script src="/libs/magnific-popup/jquery.magnific-popup.min.js"></script>
+<script src="/libs/vue/vue.js"></script>
+<script src="/js/common.js"></script>
+</body>
+</html>

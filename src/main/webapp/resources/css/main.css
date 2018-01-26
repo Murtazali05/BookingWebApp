@@ -1,0 +1,1152 @@
+*::-webkit-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*::-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-ms-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+	
+}
+body input:required:valid,
+body textarea:required:valid {
+	
+}
+body {
+	font-family: "RobotoRegular", sans-serif;
+	font-size: 16px;
+	min-width: 320px;
+	position: relative;
+}
+.hidden {
+	display: none;
+}
+.carousel img {
+	width: 100%;
+	height: auto;
+}
+.parallax {
+	background-attachment: fixed;
+	background-position: 50% 0;
+	position: relative;
+}
+
+.main_header{
+	position: relative;
+}
+
+.top_line{
+	position: absolute;
+	top: 0;
+	left:0;
+	height:60px;
+	width:100%;
+	background-color: #1BB8D7;
+}
+
+/* admin */
+.admin{
+	background-image: url(/images/admin.png);
+	background-repeat:no-repeat;
+	width: 77px;
+	height: 67px;
+	position: absolute;
+	z-index:10;
+	left:0;
+	top:60px;
+}
+
+.logo{
+	color: #fff;
+	margin-top: 14px;
+}
+
+.logo h3{
+	font-weight: normal;
+	font-size: 21px;
+	margin: 0;
+	padding: 0;
+}
+
+.logo h3 i.fa{
+	margin-right:7px;
+	font-size:22px;
+}
+
+.top_mnu{
+	margin-top: 16px;
+	text-align: center;
+}
+
+.top_mnu ul li{
+	display: inline-block;
+}
+
+.top_mnu ul li a{
+	color: #eee;
+	font-size: 18px;
+	margin-left: 25px;
+}
+
+.top_mnu ul li a:hover{
+	text-decoration: underline;
+}
+
+.auth_buttons{
+	color: #fff;
+	background-color: transparent;
+	border: none;
+	font-size: 30px;
+	float: right;
+	margin-top: 8px;
+}
+
+.auth_forms{
+	background-color: #fff;
+	margin: auto;	
+	max-width: 340px;
+	text-align: center;
+}
+
+.auth_forms h3{
+	text-transform: uppercase;	
+	font-weight: normal;
+	padding-top: 34px;
+	margin-top: 0;
+	margin-bottom: 15px;
+}
+
+.auth_forms input{
+	margin-bottom: 11px;
+	width: 240px;
+	height: 38px;
+	border: 1px solid #adadad;
+	border-radius: 3px;
+	outline: none;
+	padding-left: 8px;
+
+}
+
+.content .auth_page{
+	border: 1px solid #eee;
+	margin-top:50px;
+	margin-bottom:50px;
+}
+
+.error{
+	color: red;
+	text-align: center;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+
+.modal-box-content{
+	position: relative;
+}
+
+.auth_forms .button {
+	margin-right: 16px;
+	margin-left: -4px;
+}
+
+.button {
+	border: none;
+	outline: none;
+	display: inline-block;
+	color: #fff;
+	text-decoration: none; 
+	user-select: none; 
+	background: rgb(212,75,56); 
+	padding: 7px 25px;
+	border-radius: 5px;
+} 
+
+.button:hover {
+	background: rgb(232,95,76); 
+}
+
+.button:active {
+	background: rgb(152,15,0);
+} 
+
+a.psd{
+	display: inline-block;
+}
+
+.auth_forms p{
+	margin-top: 22px;
+}
+
+.soc_buttons {
+	padding-bottom: 21px;
+}
+
+.soc_buttons a{
+	font-size: 25px;
+	margin-left: 3px;
+}
+
+.fa-vk{
+	color: #40648D;
+}
+
+.fa-facebook-square{
+	color: #38559C;
+}
+
+.fa-twitter-square{
+	color: #00AAF3;
+}
+
+.fa-odnoklassniki-square{
+	color: #F69801;
+}
+
+.main_content{
+	background-color: #E3EBED;
+	padding-top: 95px;
+	padding-bottom:25px;
+}
+
+.content, .sidebar{
+	background-color: #fff;
+}
+
+.content h2{
+	font-weight: normal;
+	font-size: 26px;
+	text-align: center;
+	margin-top: 26px;
+	margin-bottom: 26px;
+}
+
+.main_menu ul {
+	list-style-type: none;
+	margin: 10px 0;
+	padding: 0;
+}
+
+.main_menu ul li a{
+	font-size: 14px;
+	color: #333;
+	display: block;
+	height: 40px;
+	padding-left: 20px;
+	padding-top: 8px;
+	transition: all .1s;
+} 
+
+.main_menu ul li a:hover, .main_menu ul li a.active{
+	background-color: #eef;
+}
+
+
+.book{
+	margin: 0 40px 40px 40px;
+	float: left;
+}
+
+.book a{
+	display: block;
+	max-width: 160px;
+	height: 100%;
+	transition: all .25s;
+	border: 1px solid #ddd;
+}
+
+.book a:hover{
+	box-shadow: 0 0 9px rgba(0,0,0,0.2);
+}
+
+.book a p{
+	font-size: 14px;
+	text-align: center;
+	padding: 6px;
+}
+
+.book a img{
+	padding: 4px;
+}
+
+.search_book{
+	background-color: #F0F0F0;
+	border-radius: 6px;
+	padding: 18px;
+	padding-left: 20px;
+	margin: 0 30px 30px;
+}
+
+.search_book input{
+	width: 89%;
+}
+
+.search_book button{
+	margin-left: 3px;
+}
+
+
+/* Верстка страницы блог*/
+.article {
+	border: 1px solid #ccc;
+	margin: 30px;
+}
+
+
+/* Верстка страницы user */
+.user_left_menu{
+	background-color: #F2F2F2;
+	text-align: center;
+}
+
+.user_left_menu img{
+	text-align: center;
+	border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.user_left_menu h3{
+	font-weight:normal;
+	font-family:"RobotoBold";
+	font-size:23px;
+}
+
+a.ava{
+	display: block;
+	margin-top:8px;
+	font-size:12px;
+	color: #888;
+	text-decoration: underline;
+}
+
+a.ava:hover{
+	text-decoration: none;
+}
+
+.user_left_menu hr{
+	border: none;
+	height:1px;
+	background-color: #ddd;
+	color: #ddd;
+}
+
+.user_left_menu ul{
+	text-align: left;
+	list-style-type:none;
+	padding:0 30px 40px 30px;
+}
+
+.user_left_menu ul li a{
+	display: block;
+	height:35px;
+	vertical-align: middle;
+	color: #333;
+	border-top:1px solid #ddd;
+	padding:5px 5px 0 8px;
+	font-weight: bold;
+	font-family:"RobotoBold";
+}
+
+.user_left_menu ul li a:hover {
+	color: #E63917;
+}
+
+.user_left_menu h3{
+	line-height:21px;
+}
+
+.user_left_menu h3 span{
+	font-size:13px;
+
+}
+
+/* Для страницы регистрации */
+.required_sugnup{
+	text-align: center;
+	background-color: #eee;
+	padding: 18px;
+	width: 60%;
+	margin:0 auto;
+}
+
+.required_sugnup .fa{
+	color: red;
+	font-size:34px;
+	margin-right: 10px;
+}
+.required_sugnup span {
+	display: block;
+
+}
+
+.popup_form{
+	background-color: #fff;
+	text-align: right;
+	border: 1px solid #c0c0c0;
+	width: 40%;
+	border-radius: 5px;
+	margin:25px auto;
+	padding-right: 85px;
+}
+
+
+.popup_form input{
+	width: 170px;
+}
+
+.popup_form p{
+	font-family:"RobotoBold";
+
+}
+.popup_form p span{
+	margin-right:15px;
+}
+
+/* Страница с книгой */
+.pagesbook{
+	padding-bottom: 30px;
+	padding-left:30px;
+	padding-right:30px;
+}
+.pagesbook .photo {
+	float: left;
+}
+
+.pagesbook .photo img{
+	width: 150px;
+}
+
+.pagesbook .descr {
+	margin-right:20px;
+	width: 75%;
+	font-size:15px;
+	float: right;
+}
+
+.pagesbook .descr p{
+	margin-top:0;
+}
+
+.pagesbook .link{
+	margin-top:15px;
+}
+
+.pagesbook .authors{
+	margin-top: -2px;
+}
+
+.pagesbook .reviews{
+	margin-top:20px;
+	padding: 0 30px 30px;
+	border:1px solid #ddd;
+	border-radius: 5px;
+	background-color: #fafafa;
+}
+
+.pagesbook .reviews h3{
+	font-family:"RobotoBold";
+	font-weight:normal;
+	margin-bottom:6px;
+}
+
+.reviews input, .reviews textarea{
+	outline: none;
+	border: 1px solid #ddd;
+	border-radius: 2px;
+	padding:6px 15px;
+	margin-bottom:6px;
+	margin-top:6px;
+	width: 290px;
+	color: #888;
+}
+
+.reviews textarea{
+	resize: none;
+	height:140px;
+}
+
+.reviews input:focus, .reviews textarea:focus{
+	border: 1px solid #ccc;
+}
+
+
+.reviews input[type='text']::-webkit-input-placeholder {color:#ccc;}
+.reviews input[type='text']::-moz-placeholder          {color:#ccc;}/* Firefox 19+ */
+.reviews input[type='text']:-moz-placeholder           {color:#ccc;}/* Firefox 18- */
+.reviews input[type='text']:-ms-input-placeholder      {color:#ccc;}
+
+.reviews textarea::-webkit-input-placeholder {color:#ccc;}
+.reviews textarea::-moz-placeholder      {color:#ccc;}/* Firefox 19+ */
+.reviews textarea:-moz-placeholder        {color:#ccc;}/* Firefox 18- */
+.reviews textarea:-ms-input-placeholder   {color:#ccc;}
+
+
+.listcomment{
+	padding:5px;
+}
+
+.listcomment h3.head_reviews, .reviews h3.head_reviews{
+	font-family:'RobotoBold';
+	font-size:24px;
+	text-transform: uppercase;
+	margin-top:35px;
+	margin-bottom:20px;
+	text-align: center;
+}
+
+.listcomment .comment{
+	border-top: 1px dashed #ccc;
+	padding:20px 20px;
+	position: relative;
+}
+
+
+.listcomment .comment img{
+	width: 55px;
+	height:55px;
+	border-radius: 50%;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.listcomment .comment .right_head_com{
+	display: inline-block;
+	vertical-align: middle;
+	margin-left:12px;
+}
+
+.listcomment .comment p{
+	margin:0;
+	padding:0;
+}
+
+.listcomment .comment p a{
+	font-family:"Open Sans";
+	font-weight:bold;
+	display: inline-block;
+	margin-top:0;
+	margin-bottom:5px;
+}
+
+.listcomment .comment p.txt_comment{
+	font-family:"Open Sans";
+	font-weight:normal;
+	margin-bottom:15px;
+	margin-top:15px;
+}
+
+.listcomment .comment p.header_comment{
+	font-family:"Open Sans";
+	font-size:15px;
+	font-weight: bold;
+}
+
+.listcomment .comment .close, .reviews .close{
+	top: 20px;
+	right:20px;
+	border: none;
+	background: none;
+	outline: none;
+	padding:0;
+	margin:0;
+}
+
+.close {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 13px;
+	height: 13px;
+	opacity: 0.3;
+}
+.close:hover {
+	opacity: 1;
+}
+.close:before, .close:after {
+	position: absolute;
+	left: 5px;
+	content: ' ';
+	height: 13px;
+	width: 2px;
+	background-color: #333;
+}
+.close:before {
+	transform: rotate(45deg);
+}
+.close:after {
+	transform: rotate(-45deg);
+}
+
+.listcomment p.date{
+	float: left;
+	font-family:'Open Sans';
+	font-weight: normal;
+	font-size:11px;
+	padding:5px 15px;
+	border-radius:30px;
+	background-color: #eee;
+}
+
+.listcomment .like{
+	float: right;
+	color: #256AA4;
+	font-size:14px;
+	margin-top:5px;
+}
+
+.listcomment .like button{
+	background: none;
+	border: none;
+	outline: none;
+	padding:0;
+	margin:0;
+}
+
+.listcomment .like i.fa{
+	color: #92B5D2;
+}
+
+.listcomment .like i.fa:hover{
+	color: #256AA4;
+}
+
+/* страница с рецензиями */
+.reviews .review{
+	position: relative;
+	padding: 25px 30px;
+	border-top: 1px dashed #ccc;
+	background-color: #fff;
+}
+
+.reviews .neutral{
+	background-color: #F9FAFA;
+}
+
+.reviews .positive{
+	background-color: #F5FEF8;
+}
+
+.reviews .unpositive{
+	background-color: #FEF5F5;
+}
+
+.reviews_bottom{
+	height: 35px;
+	width: 100%;
+}
+
+.reviews h3.head_reviews{
+	margin-top:30px;
+	margin-bottom:27px;
+}
+
+.reviews .review img{
+	width: 55px;
+	height:55px;
+	border-radius: 50%;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.reviews .review .right_head_com{
+	display: inline-block;
+	vertical-align: middle;
+	margin-left:12px;
+}
+
+.reviews .review p{
+	margin:0;
+	padding:0;
+}
+
+.reviews .review p.review_head_user a{
+	font-family:"Open Sans";
+	font-weight:bold;
+	display: inline-block;
+	margin-top:0;
+	margin-bottom:5px;
+}
+
+.reviews .review p.review_head_book{
+	font-size:15px;
+}
+
+.reviews .review p.review_head_book a{
+	font-family:"Open Sans";
+	font-weight:normal;
+	font-size:15px;
+	display: inline-block;
+	margin:0;
+	text-decoration: underline;
+}
+
+.reviews .review p.review_head_book a:hover{
+	text-decoration: none;
+}
+
+.reviews .review p.txt_comment{
+	font-family:"Open Sans";
+	font-weight:normal;
+	margin-bottom:15px;
+	margin-top:5px;
+}
+
+.reviews .review p.head_review{
+	font-family:"Open Sans";
+	font-size:15px;
+	font-weight: bold;
+	margin-top:9px;
+}
+
+.reviews p.date{
+	float: left;
+	font-family:'Open Sans';
+	font-weight: normal;
+	font-size:11px;
+	padding:5px 15px;
+	border-radius:30px;
+	background-color: #eee;
+}
+
+.reviews .like{
+	float: right;
+	color: #256AA4;
+	font-size:14px;
+	margin-top:5px;
+}
+
+.reviews .like button{
+	background: none;
+	border: none;
+	outline: none;
+	padding:0;
+	margin:0;
+}
+
+.reviews .like i.fa{
+	color: #92B5D2;
+}
+
+.reviews .like i.fa:hover{
+	color: #256AA4;
+}
+
+/*зеленая кнопка*/
+.green_button {
+	border: none;
+	outline: none;
+	display: inline-block;
+	color: #fafafa;
+	text-decoration: none;
+	user-select: none;
+	background: #00A070;
+	padding: 7px 25px;
+	border-radius: 5px;
+}
+
+
+/*Кнопки*/
+.animate
+{
+	transition: all 0.1s;
+	-webkit-transition: all 0.1s;
+}
+
+.action-button
+{
+	position: relative;
+	padding: 5px 30px;
+	margin: 0px 10px 10px 0px;
+	float: left;
+	border-radius: 10px;
+	font-family: 'Pacifico', cursive;
+	font-size: 20px;
+	color: #FFF;
+	text-decoration: none;
+}
+
+.blue
+{
+	display: block;
+	background-color: #3498DB;
+	border-bottom: 5px solid #2980B9;
+	text-shadow: 0px -2px #2980B9;
+}
+
+.red
+{
+	background-color: #E74C3C;
+	border-bottom: 5px solid #BD3E31;
+	text-shadow: 0px -2px #BD3E31;
+}
+
+.green
+{
+	background-color: #82BF56;
+	border-bottom: 5px solid #669644;
+	text-shadow: 0px -2px #669644;
+}
+
+.yellow
+{
+	background-color: #F2CF66;
+	border-bottom: 5px solid #D1B358;
+	text-shadow: 0px -2px #D1B358;
+}
+
+.action-button:active
+{
+	transform: translate(0px,5px);
+	-webkit-transform: translate(0px,5px);
+	border-bottom: 1px solid;
+}
+
+.link{
+	position: relative;
+}
+
+.link ul{
+	width:210px;
+	display: none;
+	margin:0;
+	padding:15px 0;
+	position: absolute;
+	top: 45px;
+	left: -100%;
+	background-color: #3498DB;
+	list-style-type: none;
+	border-radius: 10px;
+}
+
+.link ul li a{
+	font-family:"RobotoRegular";
+	font-size:16px;
+	color: #fff;
+	text-shadow: none;
+	display: block;
+	padding:15px 0;
+	text-align: center;
+}
+
+.link ul li a:hover{
+	background-color: #2980B9;
+}
+
+.link ul.active{
+	display: block;
+}
+
+table.admin_table{
+	max-width: 100%;
+	margin: 0 auto 40px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+	border-radius: 3px;
+}
+
+table.admin_table th, table.admin_table td{
+	padding:8px 25px;
+	font-family:'Open Sans';
+	font-weight:normal;
+	font-size:15px;
+	color: #3b3b3b;
+}
+
+table.admin_table th{
+	padding:15px 25px;
+}
+
+table.admin_user_table th{
+	padding:15px 14px;
+}
+
+table.admin_user_table td{
+	padding:8px 14px;
+}
+
+table.admin_table td.td_link{
+	padding-right: 30px;
+	padding-left: 30px;
+	width: 95px;
+}
+
+table.admin_table td.td_link a{
+	color: #888;
+	display: inline-block;
+}
+
+table.admin_table td.td_img{
+	text-align: center;
+}
+
+table.admin_table td.td_img img{
+	width:60px;
+	height:60px;
+	border-radius: 50%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+table.admin_table th{
+	font-weight:bold;
+	background-color: #1BB5A9;
+	color: #fafafa;
+	font-size:16px;
+}
+
+table.admin_table tr:nth-child(2n+1){
+	background-color: #E9E9E9;
+}
+
+ table.admin_table tr:nth-child(2n){
+	 background-color: #F6F6F6;
+ }
+
+.content .admin_add_button{
+	text-align: center;
+	margin: -5px auto 15px;
+}
+
+.content .admin_add_button a{
+	color: #58A3C1;
+	text-decoration: none;
+}
+
+.content .admin_add_button a:hover{
+	text-decoration: underline;
+}
+
+.content .search_head{
+	font-family:'RobotoBold';
+	font-size:18px;
+	font-weight: normal;
+	margin:30px 0 25px 39px;
+}
+
+.content .found_authors .search_head{
+	margin-top:0;
+	text-align: center;
+}
+
+/* Страница авторов */
+.content .author{
+	margin: 20px 60px;
+	margin-top:10px;
+	background-color: #FAF7FF;
+}
+/*
+.content .author:nth-child(2n+1){
+	background-color: #fff;
+}*/
+
+.content .author a{
+	display: block;
+	width:100%;
+	height: 100%;
+	font-family:'RobotoBold';
+	font-size:14px;
+	color: #302119;
+	padding:15px 40px;
+}
+
+.content .author a:hover{
+	color: #4264fd;
+}
+
+.content .author img{
+	border-radius: 50%;
+	width: 56px;
+	height: 56px;
+}
+.content .author .author_inf{
+	display: inline-block;
+	margin-left:15px;
+	height: 56px;
+}
+
+.content .author .count_book{
+	float: right;
+}
+
+.content .author .count_book p{
+	margin-top:17px;
+}
+
+.content .authorsBook h3{
+	font-weight: normal;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+
+.content .authorsBook .book{
+	margin: 0 20px 15px 0;
+}
+
+.content .authorsBook .book a{
+	width: 140px;
+}
+
+.content .authorsBook .book a img{
+	width: 138px;
+}
+
+.content .user_info{
+	margin-bottom:30px;
+	margin-left: 10px;
+	text-align: left;
+}
+
+.content .user_info th{
+	padding: 5px 0 5px 30px;
+	font-family:'RobotoRegular';
+	font-weight: normal;
+}
+
+.content .user_info th span{
+	font-weight:bold;
+	font-family:'RobotoBold';
+}
+
+/*формы редактирования и добавления*/
+.user_form{
+	margin-bottom: 40px;
+	text-align: center;
+
+}
+
+.user_form input, .user_form textarea, .user_form select {
+	margin-top: 7px;
+	outline: none;
+}
+
+.user_form input[type='text'], .user_form textarea, .user_form select {
+	width: 400px;
+	padding: 6px 8px;
+	border: 1px solid #8e8e8e;
+}
+
+.user_form select{
+	padding:0;
+}
+
+.user_form textarea{
+	resize: none;
+}
+
+.user_form input:focus:required:invalid,
+.user_form textarea:focus:required:invalid,
+.user_form select:focus:required:invalid {
+	border: 1px solid red;
+}
+.user_form input:required:valid,
+.user_form textarea:required:valid,
+.user_form select:focus:required:valid {
+	border: 1px solid #8e8e8e;
+}
+.user_form input:focus:required:valid,
+.user_form textarea:focus:required:valid{
+	border: 1px solid green;
+}
+
+ .edit .edit_info input:focus:required:invalid,
+ .edit .edit_info textarea:focus:required:invalid,
+ .edit .edit_info select:focus:required:invalid {
+	 border: 1px solid red;
+ }
+.edit .edit_info input:required:valid,
+.edit .edit_info textarea:required:valid,
+.edit .edit_info select:focus:required:valid {
+	border: 1px solid #bfbfbf;
+}
+.edit .edit_info input:focus:required:valid,
+.edit .edit_info textarea:focus:required:valid{
+	border: 1px solid green;
+}
+
+.user_form button.button{
+	margin-top:5px;
+}
+
+h2.edit_head{
+	margin-top:40px;
+	margin-bottom:30px;
+}
+
+.edit table.edit_info, .edit .edit_ava{
+	display: inline-block;
+	vertical-align: top;
+}
+
+.edit .edit_ava{
+	margin:10px 25px 60px 95px;
+}
+
+.edit .edit_info{
+	background-color: #fafafa;
+	padding:16px 25px;
+	margin:10px 40px 60px 25px;
+}
+
+.edit .edit_info button.button{
+	margin-top: 10px;
+}
+
+.edit .edit_info td{
+	padding:5px;
+}
+
+.edit .edit_info input{
+	width: 210px;
+	padding: 5px 8px;
+	border: 1px solid #bfbfbf;
+	outline: none;
+}
+
+.edit .edit_ava input[type='file']{
+	font-size:11px;
+	margin-top:5px;
+}
+
+p.advice{
+	text-align: center;
+	margin-top:35px;
+	margin-bottom:-10px;
+}
+
+footer.top {
+	height: 36px;
+	background-color: #666;
+	background-image: url(../images/top.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	cursor: pointer;
+}
+
+footer.top a {
+	display: block;
+	height: 36px;
+	width: 100%;
+}
+
+/*Вертска страницы 404*/
+.error_404 {
+	text-align: center;
+}
+
+.error_404 img{
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+
+
