@@ -3,3 +3,4 @@ $ cat .gitignore
 Book.iml
 /target
 /.idea
+/src/main/webapp/resources/libs
