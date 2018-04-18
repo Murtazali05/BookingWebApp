@@ -3,7 +3,7 @@ package ru.murtazali.book.service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import ru.murtazali.book.DAO.UserDAO;
+import ru.murtazali.book.DAO.Impl.UserDAO;
 import ru.murtazali.book.model.User;
 
 import java.util.List;
@@ -20,6 +20,6 @@ public class UserService {
 
     @Transactional(readOnly = true)
     public List<User> getAllUsers() {
-        return userDAO.findAll();
+        return userDAO.getUsers();
     }
 }

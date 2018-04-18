@@ -92,28 +92,25 @@ $(document).ready(function() {
 		$(this).find(".port_descr").attr("id", "work_" + i)
 	});
 
-//	$(".auth_forms").animated("fadeInDown", "fadeOutUp");
+    // Появление кнопки "Наверх" при скролле
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 100) {
+            if ($('.upstairs').is(':hidden')) {
+                $('.upstairs').css({opacity : 1}).fadeIn('slow');
+            }
+        } else { $('.upstairs').stop(true, false).fadeOut('fast'); }
+    });
 
-
-	//Плавный скролл до блока .div по клику на .scroll
-	//Документация: https://github.com/flesler/jquery.scrollTo
-	$("a.scroll").click(function() {
-		$.scrollTo($(".div"), 800, {
-			offset: -90
-		});
-	});
-
-
-	//Кнопка "Наверх"
-	//Документация:
-	//http://api.jquery.com/scrolltop/
-	//http://api.jquery.com/animate/
-	$("#top").click(function () {
-		$("body, html").animate({
-			scrollTop: 0
-		}, 800);
-		return false;
-	});
+    //Кнопка "Наверх"
+    //Документация:
+    //http://api.jquery.com/scrolltop/
+    //http://api.jquery.com/animate/
+    $(".upstairs").click(function () {
+        $("body, html").animate({
+            scrollTop: 0
+        }, 800);
+        return false;
+    });
 
 });
 
