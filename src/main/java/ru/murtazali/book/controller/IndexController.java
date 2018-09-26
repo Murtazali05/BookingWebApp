@@ -11,8 +11,12 @@ import java.util.List;
 
 @Controller
 public class IndexController {
+    private BookService bookService;
 
-    BookService bookService;
+    @Autowired
+    public void setBookService(BookService bookService){
+        this.bookService = bookService;
+    }
 
     @GetMapping("/")
     public String index(ModelMap map){

@@ -31,7 +31,7 @@
 </head>
 <body>
 
-<header class="main_header">
+<header class="main_header" id="main_header">
     <!--<?-->
         <!--session_start();-->
         <!--if (isset($_SESSION['logged_user']) && ($_SESSION['logged_user']->role == "admin" || $_SESSION['logged_user']->role == "moderator"))-->
@@ -159,11 +159,28 @@
     </div>
 </section>
 
-<footer class="top" title="Наверх">
-    <a href="#"></a>
+<div class="back_top">
+    <a href="#main_header" class="upstairs"><i class="fa fa-angle-up"></i></a>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="footer_inf">© Book, Inc. All rights reserved</div>
+            </div>
+            <div class="col-md-6">
+                <div class="footer_soc">
+                    <a href="#"><i class="fa fa-vk"></i></a>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
 </footer>
 
-<div class="hidden"></div>
+<div class="hidden "></div>
 
 <!--[if lt IE 9]>
 <script src="/libs/html5shiv/es5-shim.min.js"></script>
@@ -172,7 +189,7 @@
 <script src="/libs/respond/respond.min.js"></script>
 <![endif]-->
 
-<script src="/libs/jquery/jquery-1.11.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 <script src="/libs/magnific-popup/jquery.magnific-popup.min.js"></script>
 <script src="/libs/vue/vue.js"></script>
 <script src="/js/common.js"></script>
